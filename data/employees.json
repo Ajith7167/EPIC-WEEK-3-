@@ -1,0 +1,90 @@
+[
+    {
+        "employee_id": "EMP001",
+        "name": "John Smith",
+        "age": 31,
+        "email": "john.smith@example.com",
+        "department": "IT",
+        "salary": 60000
+    },
+    {
+        "employee_id": "EMP006",
+        "name": "John Doe",
+        "age": 30,
+        "email": "john.doe@example.com",
+        "department": "HR",
+        "salary": 50000
+    },
+    {
+        "employee_id": "EMP007",
+        "name": "Varun Smith",
+        "age": 31,
+        "email": "varun.smith@example.com",
+        "department": "IT",
+        "salary": 60000
+    },
+    {
+        "employee_id": "EMP008",
+        "name": "Rahul Sharma",
+        "age": 28,
+        "email": "rahul.sharma@example.com",
+        "department": "Finance",
+        "salary": 45000
+    },
+    {
+        "employee_id": "EMP009",
+        "name": "Priya Reddy",
+        "age": 26,
+        "email": "priya.reddy@example.com",
+        "department": "Marketing",
+        "salary": 40000
+    },
+    {
+        "employee_id": "EMP0010",
+        "name": "Sneha Kumar",
+        "age": 29,
+        "email": "sneha.kumar@example.com",
+        "department": "IT",
+        "salary": 55000
+    },
+    {
+        "employee_id": "EMP0011",
+        "name": "John Doe",
+        "age": 30,
+        "email": "john.doe@example.com",
+        "department": "HR",
+        "salary": 50000
+    },
+    {
+        "employee_id": "EMP0012",
+        "name": "Varun Smith",
+        "age": 31,
+        "email": "varun.smith@example.com",
+        "department": "IT",
+        "salary": 60000
+    },
+    {
+        "employee_id": "EMP0013",
+        "name": "Rahul Sharma",
+        "age": 28,
+        "email": "rahul.sharma@example.com",
+        "department": "Finance",
+        "salary": 45000
+    },
+    {
+        "employee_id": "EMP0014",
+        "name": "Priya Reddy",
+        "age": 26,
+        "email": "priya.reddy@example.com",
+        "department": "Marketing",
+        "salary": 40000
+    },
+    {
+        "employee_id": "EMP0015",
+        "name": "Sneha Kumar",
+        "age": 29,
+        "email": "sneha.kumar@example.com",
+        "department": "IT",
+        "salary": 55000
+    }
+]

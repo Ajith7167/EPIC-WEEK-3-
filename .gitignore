@@ -1,0 +1,20 @@
+
+@"
+
+# Python virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environment variables
+.env
+
+# Application logs
+logs/*.log
+
+# Git backup
+.git-backup/
+"@ | Add-Content .gitignore

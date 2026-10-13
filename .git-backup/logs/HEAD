@@ -1,0 +1,4 @@
+0000000000000000000000000000000000000000 ae4c3cf9238dc9480200d7956709edd0f8657c4e ajith7167 <vemulaajith1@gmail.com> 1791620035 +0530	commit (initial): WEEK4_DAY04
+ae4c3cf9238dc9480200d7956709edd0f8657c4e a1d32fea86c549f381bc7e03eac3bc990f2ef308 ajith7167 <vemulaajith1@gmail.com> 1791620356 +0530	pull --rebase origin main (start): checkout a1d32fea86c549f381bc7e03eac3bc990f2ef308
+a1d32fea86c549f381bc7e03eac3bc990f2ef308 283bc360cd92b242cdea5cdf8d7f3352f4037b8c ajith7167 <vemulaajith1@gmail.com> 1791620356 +0530	pull --rebase origin main (pick): WEEK4_DAY04
+283bc360cd92b242cdea5cdf8d7f3352f4037b8c 283bc360cd92b242cdea5cdf8d7f3352f4037b8c ajith7167 <vemulaajith1@gmail.com> 1791620356 +0530	pull --rebase origin main (finish): returning to refs/heads/master

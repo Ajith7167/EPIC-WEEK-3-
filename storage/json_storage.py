@@ -1,18 +1,41 @@
+
 import json
-from pathlib import Path
 
-Data_file=(Path(__file__).resolve().parent.parent / "data" / "employees.json")
+from employee_management.config.settings import DATA_FILE, logger
+
+
 def load_employees():
-    Data_file.parent.mkdir(parents=True, exist_ok=True)
-    if not Data_file.exists():
-        save_employees([])
-        return []
-    with open(Data_file, 'r',encoding='utf-8') as file:
-        return json.load(file)
-    
+    try:
+        if not DATA_FILE.exists():
+            DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
+            DATA_FILE.write_text("[]", encoding="utf-8")
 
-def save_employees(employees):                                                                                                                                                                                                                                                                                  
-    Data_file.parent.mkdir(parents=True, exist_ok=True)
-    with open(Data_file, 'w',encoding='utf-8') as file:
-        json.dump(employees, file, indent=4)
-print("Employee data saved to:",Data_file.resolve())
+        with DATA_FILE.open("r", encoding="utf-8") as file:
+            data = json.load(file)
+
+        if not isinstance(data, list):
+            raise ValueError("Employee JSON data must be a list.")
+
+        return data
+
+    except json.JSONDecodeError:
+        logger.exception("Employee JSON file contains invalid JSON")
+        raise
+
+    except Exception:
+        logger.exception("Failed to load employee data")
+        raise
+
+
+def save_employees(employees):
+    try:
+        DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
+
+        with DATA_FILE.open("w", encoding="utf-8") as file:
+            json.dump(employees, file, indent=4)
+
+        logger.info("Employee data saved successfully")
+
+    except Exception:
+        logger.exception("Failed to save employee data")
+        raise
